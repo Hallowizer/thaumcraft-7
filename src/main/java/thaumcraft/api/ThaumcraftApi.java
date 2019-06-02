@@ -259,16 +259,16 @@ public class ThaumcraftApi {
 	public static boolean exists(ItemStack item) {
 		ItemStack stack = item.copy();
 		stack.setCount(1);
-		AspectList tmp = CommonInternals.objectTags.get(stack.serializeNBT().toString());
+		AspectList tmp = CommonInternals.objectTags.get(stack.serializeNBT().toString().hashCode());
 		if (tmp==null) {
 			try {
 				stack.setItemDamage(OreDictionary.WILDCARD_VALUE);
-				tmp = CommonInternals.objectTags.get(stack.serializeNBT().toString());
+				tmp = CommonInternals.objectTags.get(stack.serializeNBT().toString().hashCode());
 				if (item.getItemDamage()==OreDictionary.WILDCARD_VALUE && tmp==null) {
 					int index=0;
 					do {
 						stack.setItemDamage(index);
-						tmp = CommonInternals.objectTags.get(stack.serializeNBT().toString());
+						tmp = CommonInternals.objectTags.get(stack.serializeNBT().toString().hashCode());
 						index++;
 					} while (index<16 && tmp==null);
 				}
