@@ -19,14 +19,21 @@ import net.minecraftforge.items.VanillaInventoryCodeHooks;
 import net.minecraftforge.items.wrapper.InvWrapper;
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.oredict.OreDictionary;
-import thaumcraft.common.lib.utils.InventoryUtils;
+import thaumcraft.lib.utils.InventoryUtils;
 
 public class ThaumcraftInvHelper {
 
 	public static class InvFilter {
+		/** Ignore metadata value */
 		public boolean igDmg;
+		
+		/** Ignore NBT data */
 		public boolean igNBT;
+		
+		/** Compare by ore dictionary */
 		public boolean useOre;
+		
+		/** Compare by modid */
 		public boolean useMod;
 		public boolean relaxedNBT = false;
 	
