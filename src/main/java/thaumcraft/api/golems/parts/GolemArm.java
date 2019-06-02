@@ -55,11 +55,11 @@ public class GolemArm
 	}
 	
 	public String getLocalizedName() {
-		return I18n.func_74838_a("golem.arm." + key.toLowerCase());
+		return I18n.translateToLocal("golem.arm." + key.toLowerCase());
 	}
 	
 	public String getLocalizedDescription() {
-		return I18n.func_74838_a("golem.arm.text." + key.toLowerCase());
+		return I18n.translateToLocal("golem.arm.text." + key.toLowerCase());
 	}
 	
 	public static GolemArm[] getArms() {

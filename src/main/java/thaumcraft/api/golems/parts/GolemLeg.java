@@ -50,11 +50,11 @@ public class GolemLeg
 	}
 	
 	public String getLocalizedName() {
-		return I18n.func_74838_a("golem.leg." + key.toLowerCase());
+		return I18n.translateToLocal("golem.leg." + key.toLowerCase());
 	}
 	
 	public String getLocalizedDescription() {
-		return I18n.func_74838_a("golem.leg.text." + key.toLowerCase());
+		return I18n.translateToLocal("golem.leg.text." + key.toLowerCase());
 	}
 	
 	public static GolemLeg[] getLegs() {

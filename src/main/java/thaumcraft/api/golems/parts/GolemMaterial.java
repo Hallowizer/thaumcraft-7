@@ -57,11 +57,11 @@ public class GolemMaterial
 	}
 	
 	public String getLocalizedName() {
-		return I18n.func_74838_a("golem.material." + key.toLowerCase());
+		return I18n.translateToLocal("golem.material." + key.toLowerCase());
 	}
 	
 	public String getLocalizedDescription() {
-		return I18n.func_74838_a("golem.material.text." + key.toLowerCase());
+		return I18n.translateToLocal("golem.material.text." + key.toLowerCase());
 	}
 	
 	public static GolemMaterial[] getMaterials() {

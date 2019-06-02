@@ -42,7 +42,7 @@ public class GolemHead
 		lastID = (byte)(lastID + 1);
 
 		if (thing.id >= heads.length) {
-			GolemHead[] temp = new GolemHead[id + 1];
+			GolemHead[] temp = new GolemHead[thing.id + 1];
 			System.arraycopy(heads, 0, temp, 0, heads.length);
 			heads = temp;
 		}
@@ -50,11 +50,11 @@ public class GolemHead
 	}
 	
 	public String getLocalizedName() {
-		return I18n.func_74838_a("golem.head." + key.toLowerCase());
+		return I18n.translateToLocal("golem.head." + key.toLowerCase());
 	}
 	
 	public String getLocalizedDescription() {
-		return I18n.func_74838_a("golem.head.text." + key.toLowerCase());
+		return I18n.translateToLocal("golem.head.text." + key.toLowerCase());
 	}
 	
 	public static GolemHead[] getHeads() {

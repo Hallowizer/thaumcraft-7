@@ -50,11 +50,11 @@ public class GolemAddon
 	}
 	
 	public String getLocalizedName() {
-		return I18n.func_74838_a("golem.addon." + key.toLowerCase());
+		return I18n.translateToLocal("golem.addon." + key.toLowerCase());
 	}
 	
 	public String getLocalizedDescription() {
-		return I18n.func_74838_a("golem.addon.text." + key.toLowerCase());
+		return I18n.translateToLocal("golem.addon.text." + key.toLowerCase());
 	}
 	
 	public static GolemAddon[] getAddons() {
