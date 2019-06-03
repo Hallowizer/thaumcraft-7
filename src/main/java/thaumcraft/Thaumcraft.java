@@ -10,7 +10,9 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.discovery.ASMDataTable;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import thaumcraft.api.items.ItemsTC;
+import thaumcraft.world.OreGeneration;
 
 @Mod(modid = Thaumcraft.MODID, name = Thaumcraft.NAME, version = Thaumcraft.VERSION)
 public class Thaumcraft {
@@ -38,6 +40,6 @@ public class Thaumcraft {
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		
+		GameRegistry.registerWorldGenerator(new OreGeneration(), 0);
 	}
 }
