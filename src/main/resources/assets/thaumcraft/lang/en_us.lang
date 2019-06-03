@@ -1,0 +1,7 @@
+tile.amber_ore.name=Amber Ore
+tile.cinnabar_ore.name=Cinnabar Ore
+tile.quartz_ore.name=Quartz Ore
+
+item.amber.name=Amber
+
+itemGroup.thaumcraft=Thaumcraft

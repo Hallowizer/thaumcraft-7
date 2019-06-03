@@ -51,9 +51,9 @@ public class Registration {
 		
 		for (ASMData data : asm.getAll(annotation.getName())) {
 			Class<? extends T> clazz = Class.forName(data.getClassName()).asSubclass(type);
-			String[] blockNames = (String[]) data.getAnnotationInfo().get("value");
+			List<String> entryNames = (List<String>) data.getAnnotationInfo().get("value");
 			
-			for (String name : blockNames) {
+			for (String name : entryNames) {
 				Constructor<? extends T> constructor = clazz.getConstructor(String.class);
 				T entry = constructor.newInstance(name);
 				
