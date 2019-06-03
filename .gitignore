@@ -17,6 +17,12 @@ out
 build
 .gradle
 
+# workspace
+CREDITS.txt
+forge-*-changelog.txt
+gradlew
+gradlew.bat
+
 # other
 eclipse
 run
