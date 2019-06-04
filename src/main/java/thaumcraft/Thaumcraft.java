@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import thaumcraft.api.items.ItemsTC;
 import thaumcraft.world.OreGeneration;
+import thaumcraft.world.WorldGenManager;
 
 @Mod(modid = Thaumcraft.MODID, name = Thaumcraft.NAME, version = Thaumcraft.VERSION)
 public class Thaumcraft {
@@ -40,6 +41,6 @@ public class Thaumcraft {
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		GameRegistry.registerWorldGenerator(new OreGeneration(), 0);
+		WorldGenManager.initGenerators();
 	}
 }

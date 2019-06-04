@@ -5,6 +5,7 @@ import java.util.HashMap;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
 import net.minecraft.item.EnumDyeColor;
+import thaumcraft.blocks.BlockSapling;
 
 public class BlocksTC {
 
@@ -17,8 +18,8 @@ public class BlocksTC {
 	public static Block logSilverwood;
 	public static Block leafGreatwood;
 	public static Block leafSilverwood;
-	public static Block saplingGreatwood;
-	public static Block saplingSilverwood;
+	public static BlockSapling saplingGreatwood;
+	public static BlockSapling saplingSilverwood;
 	public static Block shimmerleaf;
 	public static Block cinderpearl;
 	public static Block vishroom;	
